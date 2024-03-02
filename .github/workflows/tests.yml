@@ -16,7 +16,6 @@ jobs:
         git submodule update --init --recursive
         cd pagila/
         git checkout master
-        working-directory: ${{ github.workspace }}
 
         # run the database in docker container
         docker-compose up -d --build
