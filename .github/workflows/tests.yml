@@ -10,6 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: docker
+      working-directory: ${{ github.workspace }}
       run: |
         # load the pagila data
         
